@@ -70,7 +70,7 @@ jobs:
       - set_variables
     strategy:
       matrix:
-        os: [ag-windows-larger-runner]
+        os: [agwindows8cores]
         i: ${{ fromJSON(needs.set_variables.outputs.iterator) }}
       fail-fast: false
       # Increase if using ITERATIONS > 3
